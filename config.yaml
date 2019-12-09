@@ -1,0 +1,11 @@
+interval: 1 # How often to check for idle time, seconds
+idle_if_seconds: 10 # Amount of seconds since last activity to consider PC as idle
+endpoint_url: https://hass.domain.com/api
+token: GENERATE_LONG_LIVED_TOKEN_IN_HASS
+home_assistant_booleans:
+  - pc_idle
+  
+  
+# For booleans use just names without input_boolean part, for example
+# WRONG: input_boolean.pc_idle
+# CORRECT: pc_idle

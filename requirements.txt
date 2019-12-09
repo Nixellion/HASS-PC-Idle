@@ -1,0 +1,4 @@
+pywin32
+win32api
+pyyaml
+requests
