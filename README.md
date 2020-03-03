@@ -15,7 +15,7 @@ Currently only Windows is supported, Linux support will come some day.
 7. Go to your HomeAssistant -> Profile -> and generate a long lived token
 8. Paste it into config after `token:`... Well, if you use HomeAssistant you should know YAML :D
 9. Adjust other parameters to your liking
-10. In the CMD type `pc_idle.py` and hit enter.
+10. In the CMD type `pc_idle.py` and hit enter. (You may need to specifically type `python3 pc_idle.py` or worst case `C:\PathToPython\python.exe pc_idle.py` but this most likely means that Python is not in your PATH environment variable and is installed wrongly. If you did it on purpose then you know how to fix it though :) )
 
 You can also use Windows Scheduler to schedule it to start on boot or login. 
 
