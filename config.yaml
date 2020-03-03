@@ -1,10 +1,17 @@
-interval: 1 # How often to check for idle time, seconds
-idle_if_seconds: 10 # Amount of seconds since last activity to consider PC as idle
+interval: 2
+idle_if_seconds: 15
 endpoint_url: https://hass.domain.com/api
 token: GENERATE_LONG_LIVED_TOKEN_IN_HASS
+use_camera: True
+camera_id: 1
+# Just names without input_boolean part, for example
+# WRONG: input_boolean.pc_idle
+# CORRECT: pc_idle
+cascades:
+  - haarcascade_profileface.xml
+  - face_cascade_alt2.xml
 home_assistant_booleans:
-  - pc_idle
-  
+  - my_pc_idle
   
 # For booleans use just names without input_boolean part, for example
 # WRONG: input_boolean.pc_idle
