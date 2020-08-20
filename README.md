@@ -11,6 +11,7 @@ Currently only Windows is supported, Linux support will come some day.
 3. `cd DISK:` where DISK is the drive letter you have the script on
 4. `cd path` where you can copy paste the path to the pc_idle.py without the filename
 5. `pip3 install -r requirements.txt` to install all the dependencies
+5. Copy config-example.yaml into config.yaml
 6. Open config.yaml and enter your HomeAssistant API URL. Could be an IP or a domain name.
 7. Go to your HomeAssistant -> Profile -> and generate a long lived token
 8. Paste it into config after `token:`... Well, if you use HomeAssistant you should know YAML :D
